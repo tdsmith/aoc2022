@@ -1,4 +1,5 @@
 attrs
+duckdb
 pip-tools
 typer
 typing-extensions

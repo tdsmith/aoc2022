@@ -12,6 +12,10 @@ click==8.1.3
     # via
     #   pip-tools
     #   typer
+duckdb==0.6.1
+    # via -r requirements.in
+numpy==1.23.5
+    # via duckdb
 packaging==21.3
     # via build
 pep517==0.13.0
