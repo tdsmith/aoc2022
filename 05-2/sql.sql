@@ -34,7 +34,7 @@ WITH RECURSIVE container_grid AS (  -- Parse the stacks, part 1
 , containers AS (
     SELECT
         (col - 1) / 4 + 1 AS stack,
-        array_agg(ch ORDER BY rowid DESC) AS labels
+        list(ch ORDER BY rowid DESC) AS labels
     FROM (
         SELECT *, LAG(ch) OVER (PARTITION BY rowid ORDER BY col ASC) "last"
         FROM container_grid
