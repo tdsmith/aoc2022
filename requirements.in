@@ -1,5 +1,6 @@
 attrs
 duckdb
+numpy
 pip-tools
 typer
 typing-extensions
